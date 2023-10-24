@@ -1,0 +1,84 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    width: 1100px;
+    margin: auto;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* NAV CSS */
+nav{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: rgba(9, 117, 27, 0.753);
+}
+.sidemenu .btn{
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 30px;
+    margin: 20px 0;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+.sidebar{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s;
+}
+.sidebar.active{
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar aside{
+    width: 80%;
+    max-width: 350px;
+    height: 100%;
+    background-color: azure;
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+    transition: 0.10s;
+}
+.sidebar.active aside{
+    transition: 0.35s;
+    transform: translateX(0%);
+}
+
+.sidebar aside li a{
+    padding-bottom: 20px;
+    display: block;
+    font-size: 25px;
+}
+.sidebar aside li a:hover{
+    color: red;
+}
+
+.sidebar aside .cross{
+    border: none;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 27px 44px 0 0;
+    background-color: transparent;
+    background-color: red;
+    padding: 5px;
+}
